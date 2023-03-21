@@ -4,8 +4,8 @@ import styles from './page.module.css'
 export const revalidate = 0 // disable cache
 
 const redis = new Redis({
-  url: 'https://us1-endless-cricket-40360.upstash.io',
-  token: 'AZ2oACQgMTE3MDFhMTYtYWE5Yi00NjUzLTliMDQtNjUwYzgwZWVjMWU4ZmViMjYxNmUxMzlmNDMyY2FiMDc0NTVjZmUzNTI2M2U=',
+  url: process.env.UPSTASH_REDIS_REST_URL,
+	token: process.env.UPSTASH_REDIS_REST_TOKEN,
 })
 
 export default async function Home() {
