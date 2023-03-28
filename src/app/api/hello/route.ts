@@ -9,3 +9,7 @@ export async function GET(request: Request) {
   const member = await redis.srandmember<string>("nextjs13")
   return new Response(member);
 }
+
+export async function POST(request: Request) {
+  
+}

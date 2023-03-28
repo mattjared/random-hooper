@@ -1,4 +1,5 @@
 import puppeteer from "puppeteer";
+import fs from "fs";
 
 const getPlayers = async () => {
   const browser = await puppeteer.launch({
