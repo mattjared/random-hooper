@@ -17,15 +17,17 @@ const getPlayers = async () => {
     
     return Array.from(playerList).map((quote) => {
       const player = quote.querySelector(".left a").innerText;
-      // const author = quote.querySelector(".author").innerText;
       return player;
     })
   });
 
-  console.log(players);
-
   await browser.close();
+  const data = JSON.stringify(players);
+  fs.writeFile("myArray.json", data, (err) => {
+    if (err) throw err;
+    console.log("data written to file");
+  });
+
 };
 
-// Start the scraping
 getPlayers();
