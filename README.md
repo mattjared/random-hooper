@@ -38,7 +38,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. Your api endpoint can be changed in `src/app/api/hooper/route.ts`. 
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. Your api endpoint can be changed in `src/app/api/hooper/route.ts`.
 
 **Scrape**
 Find any resource you want to store / scrape and change the site and fields in `lib/scraper.js` to be specific to your project.
