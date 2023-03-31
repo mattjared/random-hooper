@@ -17,12 +17,16 @@ function getCommitMessage() {
   response=$(curl -s https://random-hooper.vercel.app/api/hooper)
   echo $response
 }
-alias git-push-with-message='ga && git commit -m "$(getCommitMessage)" && gpso'
+alias ggo='ga && git commit -m "$(getCommitMessage)" && gpso'
 ```
 
 ## How this was made and how it works
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+- I found a list of every NBA player ever on <https://www.basketball-reference.com/players/>
+- I used Puppeteer to go and scrape and store all of those players in a huge array (5101 items so far!)
+- 
 
 ## How to make your own
 

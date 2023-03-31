@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "scrape": "tsx ./lib/scraper.js",
-    "upload": "tsx ./lib/uploader.js"
+    "upload": "tsx ./lib/uploader.js",
+    "count": "tsx ./lib/count.js"
   },
   "dependencies": {
     "@types/node": "18.15.5",
