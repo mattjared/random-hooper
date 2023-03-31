@@ -27,7 +27,6 @@ alias ggo='ga && git commit -m "$(getCommitMessage)" && gpso'
 - I took that array and uploaded it to [Upstash](https://upstash.com/)
 - I bootstrapped a new [Next.js](https://nextjs.org/) project with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) and created a route that hits my Upstash set containing my giant array. Upstash randomly selects an entry for me
 - Profit
-- 
 
 ## How to make your own
 
