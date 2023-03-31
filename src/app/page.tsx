@@ -9,9 +9,8 @@ const redis = new Redis({
 })
 
 export default async function Home() {
-  const member = await redis.srandmember<string>("nextjs13 3")
-  const members = await redis.smembers("nextjs13")
-  console.log(members);
+  const member = await redis.srandmember<string>("hoopers") 
+  console.log(member); 
 
   return (
     <div className={styles.container}>

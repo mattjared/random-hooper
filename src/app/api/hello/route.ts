@@ -5,11 +5,9 @@ const redis = new Redis({
 	token: process.env.UPSTASH_REDIS_REST_TOKEN,
 })
 
-export async function GET(request: Request) {
-  const member = await redis.srandmember<string>("nextjs13")
-  return new Response(member);
-}
+export const revalidate = 0
 
-export async function POST(request: Request) {
-  
+export async function GET() {
+  const member = await redis.srandmember<string>("hoopers")
+  return new Response(member);
 }
