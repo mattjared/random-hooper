@@ -32,8 +32,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 nvm use
 npm install
 npm run dev
-# or
-change npm to be yarn or pnpm
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. Your api endpoint can be changed in `src/app/api/hooper/route.ts`. 
