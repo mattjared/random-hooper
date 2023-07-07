@@ -15,9 +15,9 @@ export default async function Home() {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <h1 className={styles.title}>
+        <h3 className={styles.title}>
           Welcome {member}
-        </h1>
+        </h3>
         <p className={styles.description}>
           You have been randomly chosen by the redis algorithm.
         </p>
